@@ -11,12 +11,22 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.css"
+        integrity="sha512-pmAAV1X4Nh5jA9m+jcvwJXFQvCBi3T17aZ1KWkqXr7g/O2YMvO8rfaa5ETWDuBvRq6fbDjlw4jHL44jNTScaKg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/milk-and-honey" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
 
     <!-- Header -->
-    <div>
+    <header>
         <!-- Subscribe & Save Section -->
         <div class="bg-brown-150 py-1.5 text-center">
             <h3 class="text-brown-950 font-bold text-sm leading-loose">SUBSCRIBE & SAVE</h3>
@@ -28,10 +38,10 @@
                 class="md:hidden bg-brown-150 p-2 text-sm font-bold rounded-lg hover:bg-white hover:border hover:border-brown-150">Claim
                 Offer Now</button>
         </div>
-    </div>
+    </header>
 
     <!-- Hero -->
-    <div>
+    <section>
         <!-- Advantages -->
         <div class="hidden justify-between bg-brown-150  py-2 md:px-12 lg:px-24 xl:px-64 md:flex md:flex-row">
             <div class="flex items-center gap-2">
@@ -113,40 +123,52 @@
         </div>
 
         <!-- Benefits -->
-        <div class="flex gap-3.5 md:gap-10 p-4 max-w-full overflow-x-auto bg-brown-150 text-brown-950">
-            <div class="min-w-28 md:min-w-44 flex items-center gap-2.5">
-                <i class="fa-solid fa-moon text-sm md:text-xl"></i>
-                <h6 class="text-sm md:text-xl font-bold">Deep Sleep</h6>
+        <!-- <div class="swiper-container-benefits bg-brown-150">
+            <div class="swiper-wrapper text-brown-950">
+                <div class="swiper-slide">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-moon text-sm md:text-xl"></i>
+                        <h6 class="text-sm md:text-xl font-bold">Deep Sleep</h6>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-heart-pulse text-sm md:text-xl"></i>
+                        <h6 class="text-sm md:text-xl font-bold">Better Circadian Health</h6>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-star text-sm md:text-xl"></i>
+                        <h6 class="text-sm md:text-xl font-bold">No Grogginess</h6>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-clock text-sm md:text-xl"></i>
+                        <h6 class="text-sm md:text-xl font-bold">Sleep Faster</h6>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="flex items-center gap-2">
+                        <i class="fa-solid fa-yin-yang text-sm md:text-xl"></i>
+                        <h6 class="text-sm md:text-xl font-bold">Reduce Stress</h6>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class=" flex items-center gap-2">
+                        <img src="./assets/recovery.png" alt="recovery" class="h-3.5 md:h-5">
+                        <h6 class="text-sm md:text-xl font-bold">Faster Recovery</h6>
+                    </div>
+                </div>
             </div>
-            <div class="min-w-48 md:min-w-64 flex items-center gap-2.5">
-                <i class="fa-solid fa-heart-pulse text-sm md:text-xl"></i>
-                <h6 class="text-sm md:text-xl font-bold">Better Circadian Health</h6>
-            </div>
-            <div class="min-w-32 md:min-w-44 flex items-center gap-2.5">
-                <i class="fa-solid fa-ban text-sm md:text-xl"></i>
-                <h6 class="text-sm md:text-xl font-bold">Melatonin Free</h6>
-            </div>
-            <div class="min-w-32 md:min-w-44 flex items-center gap-2.5">
-                <i class="fa-solid fa-star text-sm md:text-xl"></i>
-                <h6 class="text-sm md:text-xl font-bold">No Grogginess</h6>
-            </div>
-            <div class="min-w-32 md:min-w-44 flex items-center gap-2.5">
-                <i class="fa-solid fa-clock text-sm md:text-xl"></i>
-                <h6 class="text-sm md:text-xl font-bold">Sleep Faster</h6>
-            </div>
-            <div class="min-w-32 md:min-w-44 flex items-center gap-2.5">
-                <i class="fa-solid fa-yin-yang text-sm md:text-xl"></i>
-                <h6 class="text-sm md:text-xl font-bold">Reduce Stress</h6>
-            </div>
-            <div class="min-w-32 md:min-w-44 flex items-center gap-2.5">
-                <img src="./assets/recovery.png" alt="recovery" class="h-3.5 md:h-5">
-                <h6 class="text-sm md:text-xl font-bold">Faster Recovery</h6>
-            </div>
-        </div>
-    </div>
+        </div> -->
+
+
+    </section>
 
     <!-- Shop Now -->
-    <div class="container mt-8 md:mt-32">
+    <section class="container mt-8 md:mt-32">
         <div class="flex flex-col-reverse justify-between md:flex-row md:gap-1 lg:gap-10">
             <div class="md:w-1/2 ml-3 mt-3.5 md:mt-0 md:ml-0">
                 <div class="flex items-center gap-1 md:gap-2.5">
@@ -157,7 +179,8 @@
                         <i class="fa-solid fa-star text-sm"></i>
                         <i class="fa-solid fa-star text-sm"></i>
                     </div>
-                    <h6 class="font-semibold hidden md:flex w-full"><span class="font-bold mr-1"> Hundreds </span> of Better Nights
+                    <h6 class="font-semibold hidden md:flex w-full"><span class="font-bold mr-1"> Hundreds </span> of
+                        Better Nights
                         of Sleep</h6>
                     <h6 class="text-sm md:hidden">Rated
                         <span class="text-brown-150">4.4/5</span>
@@ -221,13 +244,831 @@
                         Claim Offer Now
                     </button>
                 </div>
+                <h6 class="md:hidden flex justify-center items-center mt-2.5 gap-1">
+                    <img src="./assets/verified.png" alt="verified">
+                    <span class="text-sm font-semibold"> 30 Day Risk Free Guarentee </span>
+                </h6>
             </div>
             <div class="md:w-1/2 inline-flex items-start justify-center mx-3 md:mx-0">
                 <img src="./assets/product-benefits.png" alt="">
             </div>
         </div>
-    </div>
+    </section>
+
+    <!-- Reviews -->
+    <section class="bg-gray-50 mt-11 pb-20 pt-8 md:pt-14 md:mt-24">
+        <div class="container">
+            <div class="flex flex-col items-center gap-2 justify-center md:flex-row">
+                <img src="./assets/group-of-people.png" class="hidden md:flex" alt="people">
+                <img src="./assets/people-at-gym.png" class="md:hidden" alt="people-at-gym">
+                <div class="flex items-center gap-1 mt-2.5 md:mt-0 md:gap-0">
+                    <div class="flex text-yellow gap-1 text-[10px]">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h6 class="text-sm md:text-base">Rated
+                        <span class="text-brown-150">4.4/5</span>
+                        based on
+                        <span class="font-bold">+1475 reviews</span>
+                    </h6>
+                </div>
+            </div>
+            <h1 class="text-brown-950 text-64 text-center hidden md:block md:mb-8">Reviews from Real People</h1>
+            <h2 class="text-brown-950 text-4xl text-center px-10 font-bold md:hidden">Real Reviews from Real People</h2>
+        </div>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
+                    <div>
+                        <img src="/assets/swiper-2.png" alt="swiper-second-photo">
+                    </div>
+                    <div class="flex justify-between items-center mt-2.5">
+                        <div>
+                            <h6 class="font-medium">Justin Pham</h6>
+                            <span class="flex gap-1">
+                                <img src="/assets/green-verification.png" alt="green-verification">
+                                <div class="text-xs font-bold text-lime">VERIFIED CUSTOMER</div>
+                            </span>
+                        </div>
+                        <div class="flex gap-0.5 text-xs">
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold mt-2">“Fell Asleep Super Fast”</h4>
+                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac posuere
+                        orci. Proin congue ipsum ac rhoncus semper. Pellentesque Quisque ac posuere orci. Proin congue
+                        ipsum ac rhoncus semper.</p>
+                </div>
+                <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
+                    <img src="/assets/swiper-3.png" alt="swiper-second-photo">
+                    <div class="flex justify-between items-center mt-2.5">
+                        <div>
+                            <h6 class="font-medium">Justin Pham</h6>
+                            <span class="flex gap-1">
+                                <img src="/assets/green-verification.png" alt="green-verification">
+                                <div class="text-xs font-bold text-lime">VERIFIED CUSTOMER</div>
+                            </span>
+                        </div>
+                        <div class="flex gap-0.5 text-xs">
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold mt-2">“Fell Asleep Super Fast”</h4>
+                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac posuere
+                        orci. Proin congue ipsum ac rhoncus semper. Pellentesque Quisque ac posuere orci. Proin congue
+                        ipsum ac rhoncus semper.</p>
+                </div>
+                <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
+                    <img src="/assets/swiper-4.png" alt="swiper-second-photo">
+                    <div class="flex justify-between items-center mt-2.5">
+                        <div>
+                            <h6 class="font-medium">Justin Pham</h6>
+                            <span class="flex gap-1">
+                                <img src="/assets/green-verification.png" alt="green-verification">
+                                <div class="text-xs font-bold text-lime">VERIFIED CUSTOMER</div>
+                            </span>
+                        </div>
+                        <div class="flex gap-0.5 text-xs">
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold mt-2">“Fell Asleep Super Fast”</h4>
+                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac posuere
+                        orci. Proin congue ipsum ac rhoncus semper. Pellentesque Quisque ac posuere orci. Proin congue
+                        ipsum ac rhoncus semper.</p>
+                </div>
+                <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
+                    <img src="/assets/swiper-2.png" alt="swiper-second-photo">
+                    <div class="flex justify-between items-center mt-2.5">
+                        <div>
+                            <h6 class="font-medium">Justin Pham</h6>
+                            <span class="flex gap-1">
+                                <img src="/assets/green-verification.png" alt="green-verification">
+                                <div class="text-xs font-bold text-lime">VERIFIED CUSTOMER</div>
+                            </span>
+                        </div>
+                        <div class="flex gap-0.5 text-xs">
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold mt-2">“Fell Asleep Super Fast”</h4>
+                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac posuere
+                        orci. Proin congue ipsum ac rhoncus semper. Pellentesque Quisque ac posuere orci. Proin congue
+                        ipsum ac rhoncus semper.</p>
+                </div>
+                <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
+                    <img src="/assets/swiper-3.png" alt="swiper-second-photo">
+                    <div class="flex justify-between items-center mt-2.5">
+                        <div>
+                            <h6 class="font-medium">Justin Pham</h6>
+                            <span class="flex gap-1">
+                                <img src="/assets/green-verification.png" alt="green-verification">
+                                <div class="text-xs font-bold text-lime">VERIFIED CUSTOMER</div>
+                            </span>
+                        </div>
+                        <div class="flex gap-0.5 text-xs">
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                            <i class="fa-solid fa-star text-brown-150"></i>
+                        </div>
+                    </div>
+                    <h4 class="text-lg font-bold mt-2">“Fell Asleep Super Fast”</h4>
+                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac posuere
+                        orci. Proin congue ipsum ac rhoncus semper. Pellentesque Quisque ac posuere orci. Proin congue
+                        ipsum ac rhoncus semper.</p>
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- Scientific Discovery -->
+    <section class="container">
+        <div class="md:flex gap-12 items-center mt-12 pt-1">
+            <div class="md:w-1/3">
+                <img src="/assets/scientist.png" alt="scientist">
+            </div>
+            <div class="md:w-2/3">
+                <h4 class="text-brown-150 text-22 font-extrabold">NEW SCIENTIFIC DISCOVERY</h4>
+                <h5 class="text-4xl text-brown-950 font-bold">
+                    Top Physicians Have Discovered The Main, Root Cause Of All Forms Of Sleep Disorders — and How Easy
+                    It
+                    Actually Is To Fix Your Sleep!
+                </h5>
+                <h6 class="text-22 font-semibold mt-7 xl:mr-28">
+                    Struggle to fall asleep every night? Or do you struggle to STAY asleep — twisting, turning, and
+                    waking
+                    up a lot all through the night?
+                </h6>
+                <h6 class="text-22 font-semibold mt-7 xl:mr-32">
+                    Do you constantly wake up in the mornings feeling tired and fatigued, instead of fresh and clear
+                    headed
+                    like everyone else?
+                </h6>
+                <h6 class="text-22 font-semibold mt-7">
+                    Well, news flash: it's your <span class="font-extrabold underline">hormones.</span>
+                </h6>
+            </div>
+        </div>
+        <div class="md:flex gap-14 mt-14 items-center">
+            <div class="md:w-1/2">
+                <h6 class="text-2xl font-semibold">
+                    Recent scientific breakthroughs have identified hormonal imbalances as the chief culprit behind poor
+                    sleep—whether it's due to stress, age, lifestyle, or even sleep illnesses like insomnia and sleep
+                    apnea.¹
+                </h6>
+                <h6 class="text-2xl font-semibold mt-7">
+                    These factors affect key hormones like serotonin and melatonin, which help us wind down and achieve
+                    deep
+                    sleep. It gets them out of balance, leaving us restless at night and exhausted by morning.²
+                </h6>
+                <h6 class="text-2xl font-semibold mt-7">
+                    The good news is that getting better quality sleep in general is as simple as balancing these
+                    hormones
+                    out again. 
+                </h6>
+            </div>
+            <div class="md:w-1/2">
+                <img src="/assets/woman-sleeping.png" alt="woman">
+            </div>
+        </div>
+        <div class="bg-brown-150 py-12 px-14 mt-14 rounded-2xl">
+            <h5 class="text-brown-950 text-2xl font-semibold">
+                Having an adequate amount of these hormones when you need them (at night time) is guaranteed to have you
+                <span class="font-bold"> feeling drowsy</span> and ready to sleep in a minute.³
+            </h5>
+            <h5 class="text-brown-950 text-2xl font-semibold mt-7">
+                <span class="font-bold">The problem though,</span> as anyone who has tried to fix their sleep would
+                know, is that most sleep solutions
+                come with some <span class="font-bold">serious downsides</span> — like:
+            </h5>
+
+            <ul class="list-disc mt-7 ml-5 text-2xl text-brown-950">
+                <li> Risks of <span class="font-bold">addiction</span> and <span class="font-bold">dependency</span>
+                </li>
+                <li class="font-bold"> Runny tummy <span class="font-normal">or</span> diarrhea,</li>
+                <li class="font-bold"> Hyperactive dreams <span class="font-normal">and</span> super unrestful nights
+                </li>
+                <li> Being <span class="font-bold">illegal</span> and <span class="font-bold">inappropriate</span> for
+                    working adults</li>
+                <li> Being <span class="font-bold">Unsafe/Harmful to the Body</span></li>
+                <li>Too <span class="font-bold">expensive</span></li>
+                <li> Or even just plain old <span class="font-bold">horrible</span> to use </li>
+            </ul>
+        </div>
+        <div>
+            <div class="flex items-center gap-2 justify-center md:mt-28">
+                <img src="./assets/group-of-people.png" alt="people">
+                <div class="flex text-yellow gap-1">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+                <h6 class="">Rated
+                    <span class="text-brown-150">4.4/5</span>
+                    based on
+                    <span class="font-bold">+1475 reviews</span>
+                </h6>
+            </div>
+            <h1 class="text-brown-950 text-44 leading-56 font-normal text-center px-14 mt-3.5">
+                That's why we created <span class="font-semibold">Lights Out</span> — To Provide <span
+                    class="font-semibold underline">Pure, Deep Rest</span> and
+                <span class="font-semibold underline">Sleep</span>, All through the Night, <span
+                    class="font-semibold underline">without</span> any of the <span
+                    class="font-semibold underline">downsides</span>
+            </h1>
+        </div>
+        <div class="md:flex items-center">
+            <div class="md:w-1/2">
+                <img src="/assets/free-protein.png" alt="free-protein">
+            </div>
+            <div class="md:w-1/2">
+                <h4 class="font-medium text-22">
+                    Lights out is pretty much the
+                    <span class="underline font-bold">perfect sleep solution</span>,
+                    because it fixes sleep
+                    <span class="underline font-bold">without</span>
+                    any of the
+                    popular downsides or side effects.
+                </h4>
+                <h4 class="font-medium text-22 my-7">
+                    It's a
+                    <span class="font-bold">natural </span>
+                    mixture of essential vitamins, minerals and amino acids that deal with the root
+                    cause
+                    of restlessness and insomnia, by balancing those very hormones/chemicals that govern your sleep
+                    cycles, like
+                    <span class="font-bold">serotonin, melatonin,</span> and
+                    <span class="font-bold">gaba.</span>
+                </h4>
+                <h4 class="font-medium text-22">
+                    This way you get to experience and enjoy the the kind of better, high quality sleep you want and
+                    need,
+                    <span class="font-bold">including:</span>
+                </h4>
+                <button
+                    class="hidden md:flex mt-10 px-16 py-4  text-brown-950 bg-brown-150 text-21 leading-7 font-bold p-2.5 rounded-lg hover:bg-white hover:border hover:border-brown-950 items-center gap-2">
+                    Claim My Offer Now
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
+                <div class="ml-1.5 mr-4 md:hidden">
+                    <button class="text-brown-950 bg-brown-150 w-full mt-3 text-lg font-bold p-2 rounded-lg ">
+                        Claim Offer Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ingredients -->
+    <section class="bg-brown-150">
+        <div class="container md:pt-72">
+            <h1 class="text-brown-950 text-44 text-center md:pt-2">
+                <span class="font-bold underline">9 High quality</span>
+                ingredients, combined in a
+                <span class="font-bold underline">potent</span>
+                mix, without
+                <span class="font-bold underline"> multiple benefits</span>
+                for your sleep, mood,
+                cognition, and overall well-being.
+            </h1>
+            <p class="font-medium text-brown-950 leading-5 max-w-2xl mx-auto text-center md:mt-4 md:pt-0.5 ">
+                A proprietary blend of the following vitamins, minerals and amino acids that are scientifically
+                proven
+                to target the root cause of restlessness and poor sleep:
+            </p>
+        </div>
+        <div class="swiper-container md:pb-72">
+            <div class="swiper-wrapper mt-7">
+                <div class="swiper-slide bg-grayishBrown  pl-5 pr-3 rounded-10">
+                    <div class="flex flex-col h-446 justify-between pt-8">
+                        <div>
+                            <div class="flex justify-items-start gap-4 mt-3.5">
+                                <div>
+                                    <img src="/assets/taurine.png" alt="taurine">
+                                </div>
+                                <div class="flex flex-col">
+                                    <h5 class="text-[#aa9c91] text-21">1,500mg</h5>
+                                    <h4 class="text-brown-950 text-2xl">Taurine</h4>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 mt-3.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm font-medium">
+                                    Help you
+                                    <span class="font-bold">fall asleep more easily,</span>
+                                    by reducing cortisol and regulating melatonin levels.⁷
+                                </h6>
+                            </div>
+                            <div class="flex gap-1.5 mt-2.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm font-medium">
+                                    Helps you to wake up feeling fully
+                                    It also helps you
+                                    <span class="font-bold">refreshed</span>
+                                    and
+                                    <span class="font-bold"> well rested,</span>
+                                    by increasing the duration of NREM sleep which is
+                                    what you actually need to have
+                                    <span class="font-bold">deep, restful sleep</span>
+                                    and wake up that way.⁹
+                                </h6>
+                            </div>
+                            <div class="flex gap-1.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm font-medium">
+                                    Beneficial for people who work
+                                    <span class="font-bold">nights</span>
+                                    or get
+                                    <span class="font-bold">jet lagged,</span>
+                                    as increased NREM sleep helps
+                                    to reset your circadian
+                                    <span class="font-bold">rhythm</span>
+                                    and sleep pattern too.⁸
+                                </h6>
+                            </div>
+                        </div>
+                        <a href="#" class="pb-3.5 text-black/25 text-xs font-bold underline">Sources</a>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-grayishBrown  pl-5 pr-3 rounded-10">
+                    <div class="flex flex-col justify-between h-446 pt-8">
+                        <div>
+                            <div class="flex items-center gap-4">
+                                <div>
+                                    <img src="/assets/glycine.png" alt="">
+                                </div>
+                                <div class="flex flex-col">
+                                    <h5 class="text-[#aa9c91] text-21">1,500mg</h5>
+                                    <h4 class="text-brown-950 text-2xl">Glycine</h4>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 mt-3.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm">
+                                    An amino acid that helps to
+                                    <span class="font-bold">improve sleep quality</span>
+                                    and
+                                    <span class="font-bold">keep you asleep for longer all</span>
+                                    through
+                                    the night, because it inhibits the
+                                    <span class="font-bold">wakefulness hormone</span>
+                                    that keeps your brain alert (even
+                                    though you're tired), and
+                                    <span class="font-bold">increases</span>
+                                    the
+                                    <span class="font-bold">duration</span>
+                                    of
+                                    <span class="font-bold">NREM (deeper) sleep.⁴</span>
+                                </h6>
+                            </div>
+                            <div class="flex gap-1.5 mt-2.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm">
+                                    It also helps you
+                                    <span class="font-bold">fall asleep faster</span>
+                                    and
+                                    <span class="font-bold"> reduces discomfort,</span>
+                                    as it's been shown to
+                                    <span class="font-bold">lower body temperature,</span>
+                                    which usually signals for the body to fall asleep.⁵
+                                </h6>
+                            </div>
+                        </div>
+                        <a href="#" class="mt-5 mb-3.5 text-black/25 text-xs font-bold underline">Sources</a>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-grayishBrown pl-5 pr-3.5 rounded-10">
+                    <div class="flex flex-col justify-between h-446 pt-8">
+                        <div>
+                            <div class="flex items-center gap-4">
+                                <img src="/assets/skullcup.png" alt="skullcup">
+                                <div class="flex flex-col">
+                                    <h5 class="text-[#aa9c91] text-21">500mg</h5>
+                                    <h4 class="text-brown-950 text-2xl md:mr-10">Baikal Skullcup</h4>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 mt-3.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm">
+                                    A Chinese herb that has been used traditionally, <span class="font-bold">and</span>
+                                    shown to help <span class="font-bold">treat anxiety</span> and make you
+                                    <span class="font-bold">calmer</span> by increasing GABA production.¹⁶
+                                </h6>
+                            </div>
+                            <div class="flex gap-1.5 mt-2.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm">
+                                    It may help in reducing <span class="font-bold">sleep latency</span>
+                                    (meaning you sleep quicker) and <span class="font-bold">restlessness,</span>
+                                    while <span class="font-bold">increasing sleep duration.¹⁷</span>
+                                </h6>
+                            </div>
+                        </div>
+                        <a href="#"
+                            class="inline-flex items-baseline pb-3.5 text-[#666] text-xs font-bold underline">Sources</a>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-grayishBrown  pl-5 pr-3 rounded-10">
+                    <div class="flex flex-col h-446 justify-between pt-8">
+                        <div>
+                            <div class="flex justify-items-start gap-4 ">
+                                <div>
+                                    <img src="/assets/taurine.png" alt="taurine">
+                                </div>
+                                <div class="flex flex-col">
+                                    <h5 class="text-[#aa9c91] text-21">1,500mg</h5>
+                                    <h4 class="text-brown-950 text-2xl">Taurine</h4>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 mt-3.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm font-medium">
+                                    Help you
+                                    <span class="font-bold">fall asleep more easily,</span>
+                                    by reducing cortisol and regulating melatonin levels.⁷
+                                </h6>
+                            </div>
+                            <div class="flex gap-1.5 mt-2.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm font-medium">
+                                    Helps you to wake up feeling fully
+                                    It also helps you
+                                    <span class="font-bold">refreshed</span>
+                                    and
+                                    <span class="font-bold"> well rested,</span>
+                                    by increasing the duration of NREM sleep which is
+                                    what you actually need to have
+                                    <span class="font-bold">deep, restful sleep</span>
+                                    and wake up that way.⁹
+                                </h6>
+                            </div>
+                            <div class="flex gap-1.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm font-medium">
+                                    Beneficial for people who work
+                                    <span class="font-bold">nights</span>
+                                    or get
+                                    <span class="font-bold">jet lagged,</span>
+                                    as increased NREM sleep helps
+                                    to reset your circadian
+                                    <span class="font-bold">rhythm</span>
+                                    and sleep pattern too.⁸
+                                </h6>
+                            </div>
+                        </div>
+                        <a href="#" class="pb-3.5 text-black/25 text-xs font-bold underline">Sources</a>
+                    </div>
+                </div>
+                <div class="swiper-slide bg-grayishBrown  pl-5 pr-3 rounded-10">
+                    <div class="flex flex-col justify-between h-446 pt-8">
+                        <div>
+                            <div class="flex items-start gap-4 ">
+                                <div>
+                                    <img src="/assets/magnesium.png" alt="magnesium">
+                                </div>
+                                <div class="flex flex-col ">
+                                    <h5 class="text-[#aa9c91] text-21">300mg</h5>
+                                    <h4 class="text-brown-950 text-2xl leading-7">Magnesium Glycinate</h4>
+                                </div>
+                            </div>
+                            <div class="flex gap-1.5 mt-3.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm font-medium">
+                                    A mineral that plays a role in over 300 processes in the body, including many that
+                                    are
+                                    important for sleep.¹¹ 
+                                </h6>
+                            </div>
+                            <div class="flex gap-1.5 mt-2.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm font-medium">
+                                    This including the deactivation of adrenaline and reduction of cortisol, which helps
+                                    you
+                                    feel calmer, more relaxed, and more drowsy, among other things.¹³
+                                </h6>
+                            </div>
+                            <div class="flex gap-1.5 mt-2.5">
+                                <i class="fa-solid fa-circle-check text-brown-950"></i>
+                                <h6 class="text-sm font-medium">
+                                    Glycinate form is easily absorbed form, so it's more potent and effective, with more
+                                    of
+                                    a calming effect.¹¹
+                                </h6>
+                            </div>
+                        </div>
+                        <a href="#" class="pb-3.5 text-black/25 text-xs font-bold underline">Sources</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ordering -->
+    <section>
+        <div class="benefits-container">
+            <div class="bg-brown-150 mt-32 pt-52 px-69 pb-14 rounded-2xl">
+                <h1 class="text-44 font-bold text-center font-redhat">What makes Lights out Better and Perfect for You?
+                </h1>
+                <p class="text-xl font-semibold text-center mt-3 font-redhat">
+                    The short answer: because you get all the benefits for sleep without any of the regular downsides
+                </p>
+                <div class="grid grid-cols-3 pt-16 gap-y-10 gap-x-12">
+                    <div class="flex flex-col items-start">
+                        <span class="material-symbols-outlined">
+                            task_alt
+                        </span>
+                        <h4>Convenience</h4>
+                        <p>
+                            Semi-Sweet, easy-to-take powder that's easy and enjoyable to use, instead of huge, bitter,
+                            hard
+                            to swallow pills.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <span class="material-symbols-outlined">
+                            shield
+                        </span>
+                        <h4>Safety</h4>
+                        <p>
+                            All-natural ingredients mean no addiction, no risks of dependency, no adverse effects, and
+                            no
+                            withdrawal symptoms.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <i class="fa-solid fa-poop bg-brown-950 text-brown-150 rounded-md text-2xl p-3"></i>
+                        <h4 class="my-2 text-2xl font-bold text-brown-950 font-redhat">No Diarrhea or Runny Tummy</h4>
+                        <p class="font-medium text-brown-950 font-redhat">
+                            Super effective for your sleep while using a form of magnesium that is absorbed easily, so
+                            it
+                            doesn't cause diarrhea, nausea, or stomach cramps.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <span class="material-symbols-outlined">
+                            night_sight_max
+                        </span>
+                        <h4>Effective</h4>
+                        <p>
+                            Clinically proven ingredients that deal with the actual root cause of restlessness and poor
+                            sleep by providing the nutrients and hormonal balance you need.
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <span class="material-symbols-outlined">
+                            attach_money
+                        </span>
+                        <h4>Cost-Effective</h4>
+                        <p>
+                            Sourced from natural ingredients only, so it's more affordable to “produce” (only costs
+                            about X
+                            days' worth of cups of coffee!).
+                        </p>
+                    </div>
+                    <div class="flex flex-col items-start">
+                        <span class="material-symbols-outlined">
+                            cancel
+                        </span>
+                        <h4>No Artificial Chemicals & Additives</h4>
+                        <p>
+                            Melatonin-Free* and additives free. Meaning no adverse reactions like restless sleep,
+                            nightmares, drug dependency, etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1 class="text-44 text-center font-bold font-redhat text-black max-w-lg mx-auto mt-32">Order 3 or 6 Bottles
+            and Get <span class="text-brown-150 underline"><a href="#">A FREE BONUS!</a></span></h1>
+        <div class="bg-brown-50 w-[440px] mx-auto mt-16 rounded-2xl border-[1.5px] border-brown-150">
+            <img src="/assets/book.png" alt="e-book" class="mx-auto pt-3">
+            <div class="ml-8 -mt-8 pb-6">
+                <h4 class="font-semibold text-3xl font-redhat"><strong>Ebook</strong> Sleep Tracking Log</h4>
+                <h5 class="text-22 my-0.5 font-redhat">RRP - $35 Today: <strong class="text-brown-950">FREE
+                        BONUS</strong></h5>
+                <p class="font-semibold font-redhat">
+                    This 100% journal-based sleep tracker is a powerful tool for natural rest. Each morning, log details
+                    like times awake, sleep score, the amount of times you woke up and more. Quickly identify patterns
+                    and make adjustments to sleep even better!
+                </p>
+            </div>
+        </div>
+        <h1 class="text-44 font-bold font-redhat max-w-sm text-center mx-auto mt-28">
+            Act Fast — Limited Time Offer:
+        </h1>
+        <p class="mt-2.5 text-2xl font-medium text-center max-w-[560px] mx-auto">
+            Act now and secure your own can of Lights Out at an even cheaper and way better price!
+        </p>
+        <div class="flex bg-gray-250 justify-center rounded-full max-w-md  mx-auto p-2 shadow my-7">
+            <button id="oneTimePurchase" class="py-4 px-5 text-lg font-medium rounded-full text-black/45">
+                One Time Purchase
+            </button>
+            <button id="subscribeSave" class="py-4 px-5 text-lg font-bold rounded-full bg-brown-150 text-black">
+                Subscribe & Save 17%
+            </button>
+        </div>
+        <div class="flex gap-5 justify-center">
+            <h4 class="font-semibold text-21 text-black/45  ">
+                <i class="fa-solid fa-circle-check"></i>
+                Delivered Monthly
+            </h4>
+
+            <h4 class="font-semibold text-21 text-black/45  ">
+                <i class="fa-solid fa-circle-check"></i>
+                Pause or Cancel Anytime
+            </h4>
+
+            <h4 class="font-semibold text-21 text-black/45  ">
+                <i class="fa-solid fa-circle-check"></i>
+                Discounted Pricing
+            </h4>
+        </div>
+        <div class="md:flex justify-center gap-6 mt-7">
+            <div class="md:w-[348px] hover:bg-brown-50 md:h-[546px] border-[1.5px] border-[#e9e9e9] rounded-2xl">
+                <h2 class="text-40 text-brown-950 font-milky text-center mt-5">1 Bottle</h2>
+                <p class="text-3xl font-redhat text-center">30 Day Supply</p>
+                <div>
+                    <img src="/assets/one-jar.png" class="mx-auto" alt="one-jar">
+                </div>
+                <div class="flex justify-center mt-9">
+                    <h5 class="line-through text-[#B3B3B3] text-3xl font-medium my-auto mr-2 font-redhat">$69</h5>
+                    <h4 class="text-brown-950 text-5xl font-bold font-redhat">$48</h4>
+                    <h6 class="items-start text-21 font-medium font-redhat">/bottle</h6>
+                </div>
+                <div class="flex justify-center mt-6">
+                    <button
+                        class="text-2xl font-bold font-redhat h-16 w-[297px] bg-brown-150 rounded-10 hover:bg-white hover:border hover:border-bg-brown-150 ">
+                        Buy Now - 15% Off
+                    </button>
+                </div>
+                <img src="/assets/payment-methods.png" alt="payment-methods" class="mx-auto mt-2.5 mb-4">
+                <p class="text-xs text-[#9A8D83] text-center mb-4 font-redhat">30 Day Satisfaction Guarantee With Free
+                    Returns</p>
+            </div>
+            <div class="md:w-[348px] hover:bg-brown-50 md:h-[615px] border-[1.5px] border-[#e9e9e9] rounded-2xl">
+                <h2 class="text-40 text-brown-950 font-milky text-center mt-5">3 Bottle</h2>
+                <p class="text-3xl font-redhat text-center">90 Day Supply</p>
+                <div>
+                    <img src="/assets/three-jars.png" class="mx-auto mt-2" alt="three-jars">
+                </div>
+                <div class="flex justify-center mt-7">
+                    <h5 class="line-through text-[#B3B3B3] text-3xl font-medium my-auto mr-2 font-redhat">$69</h5>
+                    <h4 class="text-brown-950 text-5xl font-bold font-redhat">$42</h4>
+                    <h6 class="items-start text-21 font-medium font-redhat">/bottle</h6>
+                </div>
+                <div class="flex justify-center mt-4">
+                    <button
+                        class="bg-brown-150 h-9 px-4 font-bold font-redhat rounded-full hover:bg-white hover:border hover:border-brown-950">
+                        FREE EBOOK - Sleep Log
+                    </button>
+                </div>
+                <div class="flex justify-center mt-3">
+                    <button
+                        class="text-2xl font-bold font-redhat h-16 w-[297px] bg-brown-150 rounded-10 hover:bg-white hover:border hover:border-bg-brown-150 ">
+                        Buy Now - 28% Off
+                    </button>
+                </div>
+                <img src="/assets/payment-methods.png" alt="payment-methods" class="mx-auto mt-2.5 mb-4">
+                <p class="text-xs text-[#9A8D83] text-center mb-4">30 Day Satisfaction Guarantee With Free Returns</p>
+            </div>
+            <div class="md:w-[348px] hover:bg-brown-50 md:h-[656px] border-[1.5px] border-[#e9e9e9] rounded-2xl">
+                <h2 class="text-40 text-brown-950 font-milky text-center mt-5">3 Bottle</h2>
+                <p class="text-3xl font-redhat text-center">90 Day Supply</p>
+                <div>
+                    <img src="/assets/six-jars.png" class="mx-auto mt-2" alt="six-jars">
+                </div>
+                <div class="flex justify-center mt-2">
+                    <h5 class="line-through text-[#B3B3B3] text-3xl font-medium my-auto mr-2 font-redhat">$69</h5>
+                    <h4 class="text-brown-950 text-5xl font-bold font-redhat">$34</h4>
+                    <h6 class="items-start text-21 font-medium font-redhat">/bottle</h6>
+                </div>
+                <div class="flex justify-center gap-1 mt-8">
+                    <button
+                        class="bg-brown-950 text-brown-150 h-9 px-4 font-bold font-redhat rounded-full hover:bg-white hover:border hover:border-brown-150">
+                        FREE SHIPPING
+                    </button>
+                    <button
+                        class="bg-brown-150 text-brown-950 h-9 px-4 font-bold font-redhat rounded-full hover:bg-white hover:border hover:border-brown-950">
+                        FREE EBOOK
+                    </button>
+                </div>
+                <div class="flex justify-center mt-3">
+                    <button
+                        class="text-2xl font-bold font-redhat h-16 w-[297px] bg-brown-150 rounded-10 hover:bg-white hover:border hover:border-bg-brown-150 ">
+                        Buy Now - 44% Off
+                    </button>
+                </div>
+                <img src="/assets/payment-methods.png" alt="payment-methods" class="mx-auto mt-2.5">
+                <p class="text-xs text-[#9A8D83] text-center mt-5 mb-4">30 Day Satisfaction Guarantee With Free Returns</p>
+            </div>
+        </div>
+    </section>
 
 </body>
+
+<script>
+    const oneTimePurchaseButton = document.getElementById('oneTimePurchase');
+    const subscribeSaveButton = document.getElementById('subscribeSave');
+
+    oneTimePurchaseButton.addEventListener('click', function () {
+        this.classList.remove('bg-white', 'text-black/45', 'font-medium');
+        this.classList.add('bg-brown-150', 'text-black', 'font-bold');
+
+        subscribeSaveButton.classList.remove('bg-brown-150', 'text-black', 'font-bold');
+        subscribeSaveButton.classList.add('#f6f6f6', 'text-black/45', 'font-medium');
+    });
+
+    subscribeSaveButton.addEventListener('click', function () {
+        this.classList.remove('bg-white', 'text-black/45', 'font-medium');
+        this.classList.add('bg-brown-150', 'text-black', 'font-bold');
+
+        oneTimePurchaseButton.classList.remove('bg-brown-150', 'text-black', 'font-bold');
+        oneTimePurchaseButton.classList.add('#f6f6f6', 'text-black/45', 'font-medium');
+    });
+
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        breakpoints: {
+            // When window width is >= 640px
+            640: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            // When window width is >= 768px
+            768: {
+                slidesPerView: 2,
+                spaceBetween: 40,
+            },
+            // When window width is >= 1024px
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 35,
+            },
+        },
+    });
+
+    var swiperBenefits = new Swiper('.swiper-container-benefits', {
+        slidesPerView: 5,
+        spaceBetween: 40,
+        loop: true,
+        breakpoints: {
+            // when window width is >= 320px
+            320: {
+                slidesPerView: 2.5,
+                spaceBetween: 10,
+            },
+            // when window width is >= 480px
+            480: {
+                slidesPerView: 2,
+                spaceBetween: 20,
+            },
+            // when window width is >= 768px
+            768: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            // when window width is >= 1024px
+            1024: {
+                slidesPerView: 4,
+                spaceBetween: 40,
+            },
+            // when window width is >= 1280px
+            1280: {
+                slidesPerView: 5,
+                spaceBetween: 40,
+            }
+        }
+    });
+
+</script>
+
 
 </html>
