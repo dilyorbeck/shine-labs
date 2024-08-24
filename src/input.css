@@ -14,35 +14,36 @@
     display: none;
 }
 
-.container {
-    @apply max-w-[1240px] mx-auto;
 
-    @screen md {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
+
+.container {
+    @apply max-w-[1240px] mx-auto px-5 xl:px-0
 }
 
 h1 {
     @apply text-brown-950 text-44
 }
 
-.benefits-container {
-    @apply max-w-[1290px] mx-auto
+.standard-container {
+    @apply max-w-[1290px] mx-auto px-5 xl:px-0
 }
 
-.benefits-container h4 {
+.benefits h4 {
     @apply my-2 text-2xl font-bold text-brown-950 font-redhat;
 }
 
-.benefits-container p {
-    @apply font-medium text-brown-950 font-redhat;
+.benefits p {
+    @apply font-medium text-brown-950 font-redhat max-w-xs md:max-w-full;
 }
 
-.benefits-container span {
+.benefits span {
     @apply bg-brown-950 text-brown-150 rounded-md p-3
 }
 
-.benefits-container i {
+.benefits i {
     @apply bg-brown-950 text-brown-150 rounded-md text-2xl p-3
+}
+
+.swiper-pagination-bullet-active {
+ @apply   background-color: bg-brown-950 !important;
 }

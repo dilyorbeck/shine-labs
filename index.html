@@ -19,7 +19,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
         rel="stylesheet">
     <link href="https://fonts.cdnfonts.com/css/milk-and-honey" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
 </head>
 
@@ -32,35 +34,39 @@
             <h3 class="text-brown-950 font-bold text-sm leading-loose">SUBSCRIBE & SAVE</h3>
         </div>
         <!-- Logo Section -->
-        <div class="flex justify-between p-4 md:py-6 md:pl-138">
-            <img src="./assets/logo.png" alt="Logo" />
-            <button
-                class="md:hidden bg-brown-150 p-2 text-sm font-bold rounded-lg hover:bg-white hover:border hover:border-brown-150">Claim
-                Offer Now</button>
+        <div class="container">
+            <div class="flex justify-between p-4 md:py-6 md:pl-9">
+                <img src="./assets/logo.png" alt="Logo" />
+                <button
+                    class="md:hidden bg-brown-150 p-2 text-sm font-bold rounded-lg hover:bg-white hover:border hover:border-brown-150">Claim
+                    Offer Now</button>
+            </div>
         </div>
     </header>
 
     <!-- Hero -->
     <section>
         <!-- Advantages -->
-        <div class="hidden justify-between bg-brown-150  py-2 md:px-12 lg:px-24 xl:px-64 md:flex md:flex-row">
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined">
-                    local_shipping
-                </span>
-                <h6 class="text-sm font-bold">FAST SHIPPING</h6>
-            </div>
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined">
-                    nest_eco_leaf
-                </span>
-                <h6 class="text-sm font-bold">100% NATURAL INGREDIENTS</h6>
-            </div>
-            <div class="flex items-center gap-2">
-                <span class="material-symbols-outlined">
-                    heart_plus
-                </span>
-                <h6 class="text-sm font-bold">IMPROVED SLEEP AND HEALTH</h6>
+        <div class="bg-brown-50">
+            <div class="hidden justify-between container gap-44 py-2 md:flex">
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined">
+                        local_shipping
+                    </span>
+                    <h6 class="text-sm font-bold">FAST SHIPPING</h6>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined">
+                        nest_eco_leaf
+                    </span>
+                    <h6 class="text-sm font-bold">100% NATURAL INGREDIENTS</h6>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="material-symbols-outlined">
+                        heart_plus
+                    </span>
+                    <h6 class="text-sm font-bold">IMPROVED SLEEP AND HEALTH</h6>
+                </div>
             </div>
         </div>
 
@@ -68,7 +74,7 @@
         <div class="bg-brown-gradient">
             <div class="container flex flex-col-reverse items-center md:flex-row">
                 <div class="md:w-1/2">
-                    <img src="./assets/product.png" alt="product">
+                    <img src="./assets/product.svg" alt="product">
                 </div>
                 <div class="md:w-1/2 md:pt-28 md:pb-102">
                     <h1 class="hidden text-brown-150 text-42 leading-56 font-semibold md:mr-20 md:block">
@@ -256,7 +262,7 @@
     </section>
 
     <!-- Reviews -->
-    <section class="bg-gray-50 mt-11 pb-20 pt-8 md:pt-14 md:mt-24">
+    <section class="bg-gray-50 mt-11 pt-8 md:pt-14 md:mt-24">
         <div class="container">
             <div class="flex flex-col items-center gap-2 justify-center md:flex-row">
                 <img src="./assets/group-of-people.png" class="hidden md:flex" alt="people">
@@ -279,11 +285,11 @@
             <h1 class="text-brown-950 text-64 text-center hidden md:block md:mb-8">Reviews from Real People</h1>
             <h2 class="text-brown-950 text-4xl text-center px-10 font-bold md:hidden">Real Reviews from Real People</h2>
         </div>
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
+        <div class="swiper-container pb-10">
+            <div class="swiper-wrapper mt-4 md:mt-0">
                 <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
                     <div>
-                        <img src="/assets/swiper-2.png" alt="swiper-second-photo">
+                        <img src="/assets/swiper.svg" class="mx-auto" alt="swiper-first-photo">
                     </div>
                     <div class="flex justify-between items-center mt-2.5">
                         <div>
@@ -307,7 +313,7 @@
                         ipsum ac rhoncus semper.</p>
                 </div>
                 <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
-                    <img src="/assets/swiper-3.png" alt="swiper-second-photo">
+                    <img src="/assets/swiper-2.png" class="mx-auto" alt="swiper-second-photo">
                     <div class="flex justify-between items-center mt-2.5">
                         <div>
                             <h6 class="font-medium">Justin Pham</h6>
@@ -330,7 +336,7 @@
                         ipsum ac rhoncus semper.</p>
                 </div>
                 <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
-                    <img src="/assets/swiper-4.png" alt="swiper-second-photo">
+                    <img src="/assets/swiper-3.svg" class="mx-auto" alt="swiper-third-photo">
                     <div class="flex justify-between items-center mt-2.5">
                         <div>
                             <h6 class="font-medium">Justin Pham</h6>
@@ -353,7 +359,7 @@
                         ipsum ac rhoncus semper.</p>
                 </div>
                 <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
-                    <img src="/assets/swiper-2.png" alt="swiper-second-photo">
+                    <img src="/assets/swiper.svg" class="mx-auto" alt="swiper-first-photo">
                     <div class="flex justify-between items-center mt-2.5">
                         <div>
                             <h6 class="font-medium">Justin Pham</h6>
@@ -376,7 +382,7 @@
                         ipsum ac rhoncus semper.</p>
                 </div>
                 <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
-                    <img src="/assets/swiper-3.png" alt="swiper-second-photo">
+                    <img src="/assets/swiper-2.svg" class="mx-auto" alt="swiper-second-photo">
                     <div class="flex justify-between items-center mt-2.5">
                         <div>
                             <h6 class="font-medium">Justin Pham</h6>
@@ -398,75 +404,82 @@
                         orci. Proin congue ipsum ac rhoncus semper. Pellentesque Quisque ac posuere orci. Proin congue
                         ipsum ac rhoncus semper.</p>
                 </div>
-
+            </div>
+            <div class="flex max-w-xs mt-12 px-5 mx-auto md:hidden">
+                <button class="prev-slide">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <div class="flex justify-center pagination mt-3">
+                </div>
+                <button class="next-slide">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
             </div>
         </div>
-
-
     </section>
 
-    <!-- Scientific Discovery -->
+    <!-- Scientific Discovery Done -->
     <section class="container">
-        <div class="md:flex gap-12 items-center mt-12 pt-1">
+        <div class="flex flex-col gap-y-5 gap-x-12 items-center mt-16 md:mt-12 md:pt-1 md:flex-row">
             <div class="md:w-1/3">
-                <img src="/assets/scientist.png" alt="scientist">
+                <img src="/assets/scientist.png" class="rounded" alt="scientist">
             </div>
             <div class="md:w-2/3">
-                <h4 class="text-brown-150 text-22 font-extrabold">NEW SCIENTIFIC DISCOVERY</h4>
-                <h5 class="text-4xl text-brown-950 font-bold">
+                <h4 class="text-brown-150 font-extrabold text-20 md:text-22">NEW SCIENTIFIC DISCOVERY</h4>
+                <h5 class="text-[32px] text-brown-950 font-bold md:text-4xl">
                     Top Physicians Have Discovered The Main, Root Cause Of All Forms Of Sleep Disorders — and How Easy
                     It
                     Actually Is To Fix Your Sleep!
                 </h5>
-                <h6 class="text-22 font-semibold mt-7 xl:mr-28">
+                <h6 class="font-semibold text-20 md:text-22 mt-2 md:mt-7 xl:mr-28">
                     Struggle to fall asleep every night? Or do you struggle to STAY asleep — twisting, turning, and
                     waking
                     up a lot all through the night?
                 </h6>
-                <h6 class="text-22 font-semibold mt-7 xl:mr-32">
+                <h6 class="font-semibold text-20 md:text-22 mt-2 md:mt-7 xl:mr-28">
                     Do you constantly wake up in the mornings feeling tired and fatigued, instead of fresh and clear
                     headed
                     like everyone else?
                 </h6>
-                <h6 class="text-22 font-semibold mt-7">
-                    Well, news flash: it's your <span class="font-extrabold underline">hormones.</span>
+                <h6 class="font-semibold text-20 md:text-22 mt-2 md:mt-7 xl:mr-28">
+                    Well, news flash: it's your <a href="#" class="font-extrabold underline">hormones.</a>
                 </h6>
             </div>
         </div>
-        <div class="md:flex gap-14 mt-14 items-center">
+        <div class="flex flex-col-reverse gap-y-6 gap-x-14 items-center mt-6 md:mt-14 md:flex-row">
             <div class="md:w-1/2">
-                <h6 class="text-2xl font-semibold">
+                <h6 class="font-semibold text-20 md:text-2xl">
                     Recent scientific breakthroughs have identified hormonal imbalances as the chief culprit behind poor
                     sleep—whether it's due to stress, age, lifestyle, or even sleep illnesses like insomnia and sleep
                     apnea.¹
                 </h6>
-                <h6 class="text-2xl font-semibold mt-7">
+                <h6 class="font-semibold text-20 mt-3 md:text-2xl md:mt-7">
                     These factors affect key hormones like serotonin and melatonin, which help us wind down and achieve
                     deep
                     sleep. It gets them out of balance, leaving us restless at night and exhausted by morning.²
                 </h6>
-                <h6 class="text-2xl font-semibold mt-7">
+                <h6 class="font-semibold text-20 mt-3 md:text-2xl md:mt-7">
                     The good news is that getting better quality sleep in general is as simple as balancing these
                     hormones
                     out again. 
                 </h6>
             </div>
             <div class="md:w-1/2">
-                <img src="/assets/woman-sleeping.png" alt="woman">
+                <img src="/assets/woman-sleeping.png" class="" alt="woman">
             </div>
         </div>
-        <div class="bg-brown-150 py-12 px-14 mt-14 rounded-2xl">
-            <h5 class="text-brown-950 text-2xl font-semibold">
+        <div class="bg-brown-150 rounded-2xl mt-5 py-7 pl-3.5 pr-2 md:py-12 md:px-14 md:mt-14">
+            <h5 class="text-brown-950 font-semibold text-xl md:text-2xl">
                 Having an adequate amount of these hormones when you need them (at night time) is guaranteed to have you
                 <span class="font-bold"> feeling drowsy</span> and ready to sleep in a minute.³
             </h5>
-            <h5 class="text-brown-950 text-2xl font-semibold mt-7">
+            <h5 class="text-brown-950 font-semibold mt-4 text-xl md:mt-7 md:text-2xl">
                 <span class="font-bold">The problem though,</span> as anyone who has tried to fix their sleep would
                 know, is that most sleep solutions
                 come with some <span class="font-bold">serious downsides</span> — like:
             </h5>
 
-            <ul class="list-disc mt-7 ml-5 text-2xl text-brown-950">
+            <ul class="list-disc mt-4 ml-8 text-brown-950 text-20 md:mt-7 md:ml-5 md:text-2xl">
                 <li> Risks of <span class="font-bold">addiction</span> and <span class="font-bold">dependency</span>
                 </li>
                 <li class="font-bold"> Runny tummy <span class="font-normal">or</span> diarrhea,</li>
@@ -479,67 +492,137 @@
                 <li> Or even just plain old <span class="font-bold">horrible</span> to use </li>
             </ul>
         </div>
-        <div>
-            <div class="flex items-center gap-2 justify-center md:mt-28">
-                <img src="./assets/group-of-people.png" alt="people">
-                <div class="flex text-yellow gap-1">
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                    <i class="fa-solid fa-star"></i>
-                </div>
-                <h6 class="">Rated
-                    <span class="text-brown-150">4.4/5</span>
-                    based on
-                    <span class="font-bold">+1475 reviews</span>
-                </h6>
+        <div class="hidden items-center gap-2 justify-center md:mt-28 md:flex">
+            <img src="./assets/group-of-people.png" alt="people">
+            <div class="flex text-yellow gap-1">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
             </div>
-            <h1 class="text-brown-950 text-44 leading-56 font-normal text-center px-14 mt-3.5">
+            <h6 class="">Rated
+                <span class="text-brown-150">4.4/5</span>
+                based on
+                <span class="font-bold">+1475 reviews</span>
+            </h6>
+        </div>
+        <div>
+            <h1
+                class="text-brown-950 font-normal text-center text-2xl mt-9 md:px-14 md:mt-3.5 md:text-44 md:leading-56">
                 That's why we created <span class="font-semibold">Lights Out</span> — To Provide <span
                     class="font-semibold underline">Pure, Deep Rest</span> and
                 <span class="font-semibold underline">Sleep</span>, All through the Night, <span
                     class="font-semibold underline">without</span> any of the <span
                     class="font-semibold underline">downsides</span>
             </h1>
-        </div>
-        <div class="md:flex items-center">
-            <div class="md:w-1/2">
-                <img src="/assets/free-protein.png" alt="free-protein">
-            </div>
-            <div class="md:w-1/2">
-                <h4 class="font-medium text-22">
-                    Lights out is pretty much the
-                    <span class="underline font-bold">perfect sleep solution</span>,
-                    because it fixes sleep
-                    <span class="underline font-bold">without</span>
-                    any of the
-                    popular downsides or side effects.
-                </h4>
-                <h4 class="font-medium text-22 my-7">
-                    It's a
-                    <span class="font-bold">natural </span>
-                    mixture of essential vitamins, minerals and amino acids that deal with the root
-                    cause
-                    of restlessness and insomnia, by balancing those very hormones/chemicals that govern your sleep
-                    cycles, like
-                    <span class="font-bold">serotonin, melatonin,</span> and
-                    <span class="font-bold">gaba.</span>
-                </h4>
-                <h4 class="font-medium text-22">
-                    This way you get to experience and enjoy the the kind of better, high quality sleep you want and
-                    need,
-                    <span class="font-bold">including:</span>
-                </h4>
-                <button
-                    class="hidden md:flex mt-10 px-16 py-4  text-brown-950 bg-brown-150 text-21 leading-7 font-bold p-2.5 rounded-lg hover:bg-white hover:border hover:border-brown-950 items-center gap-2">
-                    Claim My Offer Now
-                    <i class="fa-solid fa-arrow-right-long"></i>
-                </button>
-                <div class="ml-1.5 mr-4 md:hidden">
-                    <button class="text-brown-950 bg-brown-150 w-full mt-3 text-lg font-bold p-2 rounded-lg ">
-                        Claim Offer Now
+            <div class="flex flex-col items-center md:flex-row">
+                <div class="md:w-1/2">
+                    <img src="/assets/free-protein.png" class="hidden h-full w-full md:block" alt="free-protein">
+                    <img src="/assets/one-scoop.svg" class="mx-auto md:hidden" alt="one-scoop" />
+                    <div class="mb-7 md:hidden">
+                        <button class="text-brown-950 bg-brown-150 w-full mt-3 text-lg font-bold p-2 rounded-lg">
+                            Claim Offer Now
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <h4 class="font-medium text-xl md:text-22">
+                        Lights out is pretty much the
+                        <span class="underline font-bold">perfect sleep solution</span>,
+                        because it fixes sleep
+                        <span class="underline font-bold">without</span>
+                        any of the
+                        popular downsides or side effects.
+                    </h4>
+                    <h4 class="font-medium text-xl my-4 md:text-22 md:my-7">
+                        It's a
+                        <span class="font-bold">natural </span>
+                        mixture of essential vitamins, minerals and amino acids that deal with the root
+                        cause
+                        of restlessness and insomnia, by balancing those very hormones/chemicals that govern your sleep
+                        cycles, like
+                        <span class="font-bold">serotonin, melatonin,</span> and
+                        <span class="font-bold">gaba.</span>
+                    </h4>
+                    <h4 class="font-medium text-xl md:text-22">
+                        This way you get to experience and enjoy the the kind of better, high quality sleep you want and
+                        need,
+                        <span class="font-bold">including:</span>
+                    </h4>
+                    <button
+                        class="hidden md:flex mt-10 px-16 py-4  text-brown-950 bg-brown-150 text-21 leading-7 font-bold p-2.5 rounded-lg hover:bg-white hover:border hover:border-brown-950 items-center gap-2">
+                        Claim My Offer Now
+                        <i class="fa-solid fa-arrow-right-long"></i>
                     </button>
+                </div>
+            </div>
+            <div class="flex flex-col-reverse mt-5 gap-5 md:mt-0 md:flex-row">
+                <div class="md:w-1/2">
+                    <div class="grid grid-cols-2 gap-4 md:gap-12 md:grid-cols-2">
+                        <div class="md:hidden">
+                            <div class="h-11 w-11 bg-brown-950 rounded-full flex items-center justify-center">
+                                <i class="fa-solid fa-arrows-rotate text-brown-150 text-2xl"></i>
+                            </div>
+                            <h5 class="font-redhat font-bold mt-2.5 md:text-2xl md:mt-3.5">
+                                All Day Energy & Improved Mood
+                            </h5>
+                        </div>
+                        <div>
+                            <div
+                                class="h-11 w-11 bg-brown-950 rounded-full flex items-center justify-center md:h-16 md:w-16">
+                                <i class="fa-regular fa-clock text-brown-150 text-2xl md:text-4xl"></i>
+                            </div>
+                            <h5 class="font-redhat font-bold mt-2.5 md:text-2xl md:mt-3.5">
+                                Falling asleep faster
+                            </h5>
+                        </div>
+                        <div>
+                            <div
+                                class="h-11 w-11 bg-brown-950 rounded-full flex items-center justify-center md:h-16 md:w-16">
+                                <i class="fa-solid fa-moon text-brown-150 text-2xl md:text-4xl"></i>
+                            </div>
+                            <h5 class="font-redhat font-bold mt-2.5 md:text-2xl md:mt-3.5">
+                                Getting deeper, longer, all-through-the-night sleep
+                            </h5>
+                        </div>
+                        <div>
+                            <div
+                                class="h-11 w-11 bg-brown-950 rounded-full flex items-center justify-center md:h-16 md:w-16">
+                                <i class="fa-regular fa-sun text-brown-150 text-2xl md:text-4xl"></i>
+                            </div>
+                            <h5 class="font-redhat font-bold mt-2.5 md:text-2xl md:mt-3.5">
+                                Waking up well rested and refreshed every single morning 
+                            </h5>
+                        </div>
+                        <div>
+                            <div
+                                class="h-11 w-11 bg-brown-950 rounded-full flex items-center justify-center md:h-16 md:w-16">
+                                <i class="fa-solid fa-briefcase text-brown-150 text-2xl md:text-4xl"></i>
+                            </div>
+                            <h5 class="font-redhat font-bold mt-2.5 md:text-2xl md:mt-3.5">
+                                More focus and concentration throughout the day
+                            </h5>
+                        </div>
+                        <div>
+                            <div
+                                class="h-11 w-11 bg-brown-950 rounded-full flex items-center justify-center md:h-16 md:w-16">
+                                <i class="fa-regular fa-heart text-brown-150 text-2xl md:text-4xl"></i>
+                            </div>
+                            <h5 class="font-redhat font-bold mt-2.5 md:text-2xl md:mt-3.5">
+                                Reduced anxiety and better mood
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="flex justify-center">
+                        <button
+                            class="text-lg font-bold font-redhat bg-brown-150 text-brown-950 h-16 max-w-xs rounded-10 w-full mt-2 md:hidden">
+                            Claim Offer Now
+                        </button>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="/assets/product-benefits.svg" class="mx-auto w-full h-full md:mx-0" alt="product-svg">
                 </div>
             </div>
         </div>
@@ -547,8 +630,8 @@
 
     <!-- Ingredients -->
     <section class="bg-brown-150">
-        <div class="container md:pt-72">
-            <h1 class="text-brown-950 text-44 text-center md:pt-2">
+        <div class="container mt-14 pt-9 md:mt-40 md:pt-72">
+            <h1 class="text-brown-950 text-center text-2xl md:text-44 md:leading-56 md:mx-auto md:max-w-5xl md:pt-2">
                 <span class="font-bold underline">9 High quality</span>
                 ingredients, combined in a
                 <span class="font-bold underline">potent</span>
@@ -557,15 +640,16 @@
                 for your sleep, mood,
                 cognition, and overall well-being.
             </h1>
-            <p class="font-medium text-brown-950 leading-5 max-w-2xl mx-auto text-center md:mt-4 md:pt-0.5 ">
+            <p
+                class="font-medium text-brown-950 leading-5 mx-auto text-center text-sm max-w-md mt-2.5 md:max-w-2xl md:text-base md:mt-4 md:pt-0.5 ">
                 A proprietary blend of the following vitamins, minerals and amino acids that are scientifically
                 proven
                 to target the root cause of restlessness and poor sleep:
             </p>
         </div>
-        <div class="swiper-container md:pb-72">
+        <div class="swiper-container relative md:pb-72">
             <div class="swiper-wrapper mt-7">
-                <div class="swiper-slide bg-grayishBrown  pl-5 pr-3 rounded-10">
+                <div class="swiper-slide bg-grayishBrown pl-5 pr-3 rounded-10">
                     <div class="flex flex-col h-446 justify-between pt-8">
                         <div>
                             <div class="flex justify-items-start gap-4 mt-3.5">
@@ -616,7 +700,7 @@
                         <a href="#" class="pb-3.5 text-black/25 text-xs font-bold underline">Sources</a>
                     </div>
                 </div>
-                <div class="swiper-slide bg-grayishBrown  pl-5 pr-3 rounded-10">
+                <div class="swiper-slide bg-grayishBrown pl-5 pr-3 rounded-10">
                     <div class="flex flex-col justify-between h-446 pt-8">
                         <div>
                             <div class="flex items-center gap-4">
@@ -694,7 +778,7 @@
                             class="inline-flex items-baseline pb-3.5 text-[#666] text-xs font-bold underline">Sources</a>
                     </div>
                 </div>
-                <div class="swiper-slide bg-grayishBrown  pl-5 pr-3 rounded-10">
+                <div class="swiper-slide bg-grayishBrown pl-5 pr-3 rounded-10">
                     <div class="flex flex-col h-446 justify-between pt-8">
                         <div>
                             <div class="flex justify-items-start gap-4 ">
@@ -745,7 +829,7 @@
                         <a href="#" class="pb-3.5 text-black/25 text-xs font-bold underline">Sources</a>
                     </div>
                 </div>
-                <div class="swiper-slide bg-grayishBrown  pl-5 pr-3 rounded-10">
+                <div class="swiper-slide bg-grayishBrown pl-5 pr-3 rounded-10">
                     <div class="flex flex-col justify-between h-446 pt-8">
                         <div>
                             <div class="flex items-start gap-4 ">
@@ -786,21 +870,37 @@
                     </div>
                 </div>
             </div>
+            <div class="flex max-w-xs mt-5 px-5 mx-auto pb-9 md:hidden">
+                <button class="prev-slide">
+                    <i class="fa-solid fa-arrow-left"></i>
+                </button>
+                <div class="flex justify-center pagination mt-3">
+                </div>
+                <button class="next-slide">
+                    <i class="fa-solid fa-arrow-right"></i>
+                </button>
+            </div>
         </div>
     </section>
 
     <!-- Ordering -->
     <section>
-        <div class="benefits-container">
-            <div class="bg-brown-150 mt-32 pt-52 px-69 pb-14 rounded-2xl">
-                <h1 class="text-44 font-bold text-center font-redhat">What makes Lights out Better and Perfect for You?
+        <div class="standard-container">
+            <div
+                class="bg-brown-150 mx-auto mt-9 max-w-lg rounded-2xl pt-7 pb-14 md:max-w-full md:pt-52 md:px-69 md:mt-32">
+                <h1
+                    class="text-2xl font-bold text-center font-redhat max-w-xs mx-auto md:max-w-full md:leading-56 md:text-44">
+                    What makes Lights out
+                    Better and Perfect for You?
                 </h1>
-                <p class="text-xl font-semibold text-center mt-3 font-redhat">
+                <p
+                    class="text-lg font-semibold text-center font-redhat mt-3 max-w-lg mx-auto px-4 md:px-0 md:max-w-full md:text-xl">
                     The short answer: because you get all the benefits for sleep without any of the regular downsides
                 </p>
-                <div class="grid grid-cols-3 pt-16 gap-y-10 gap-x-12">
+                <div
+                    class="grid benefits grid-cols-1 md:grid-cols-2 lg:grid-cols-3 px-4 gap-y-5 gap-x-12 pt-9 mt-0.5 md:pt-16 md:px-0 md:gap-y-10">
                     <div class="flex flex-col items-start">
-                        <span class="material-symbols-outlined">
+                        <span class="material-symbols-outlined bg-brown-950 text-brown-150 p-2 rounded-md">
                             task_alt
                         </span>
                         <h4>Convenience</h4>
@@ -863,138 +963,328 @@
                     </div>
                 </div>
             </div>
-        </div>
-        <h1 class="text-44 text-center font-bold font-redhat text-black max-w-lg mx-auto mt-32">Order 3 or 6 Bottles
-            and Get <span class="text-brown-150 underline"><a href="#">A FREE BONUS!</a></span></h1>
-        <div class="bg-brown-50 w-[440px] mx-auto mt-16 rounded-2xl border-[1.5px] border-brown-150">
-            <img src="/assets/book.png" alt="e-book" class="mx-auto pt-3">
-            <div class="ml-8 -mt-8 pb-6">
-                <h4 class="font-semibold text-3xl font-redhat"><strong>Ebook</strong> Sleep Tracking Log</h4>
-                <h5 class="text-22 my-0.5 font-redhat">RRP - $35 Today: <strong class="text-brown-950">FREE
-                        BONUS</strong></h5>
-                <p class="font-semibold font-redhat">
-                    This 100% journal-based sleep tracker is a powerful tool for natural rest. Each morning, log details
-                    like times awake, sleep score, the amount of times you woke up and more. Quickly identify patterns
-                    and make adjustments to sleep even better!
+            <h1
+                class="text-2xl text-center font-bold font-redhat text-black mx-auto max-w-72 mt-9 pt-0.5 md:pt-0 md:max-w-lg md:mt-32 md:text-44 md:leading-56">
+                Order 3 or 6 Bottles
+                and Get <span class="text-brown-150 underline"><a href="#">A FREE BONUS!</a></span></h1>
+            <div
+                class="bg-brown-50 mx-auto mt-4 rounded-2xl border-[1.5px] border-brown-150 max-w-80 md:max-w-[440px] md:mt-16">
+                <img src="/assets/book.png" alt="e-book" class="mx-auto h-28 pt-3 md:h-auto">
+                <div class="mx-6 pb-2.5 md:ml-8 md:pb-6">
+                    <h4 class="font-semibold text-2xl font-redhat md:text-3xl"><strong>Ebook</strong> Sleep Tracking Log
+                    </h4>
+                    <h5 class="text-lg my-0.5 font-redhat md:text-22">RRP - $35 Today: <strong
+                            class="text-brown-950">FREE
+                            BONUS</strong></h5>
+                    <p class="font-semibold font-redhat text-sm md:text-base">
+                        This 100% journal-based sleep tracker is a powerful tool for natural rest. Each morning, log
+                        details
+                        like times awake, sleep score, the amount of times you woke up and more. Quickly identify
+                        patterns
+                        and make adjustments to sleep even better!
+                    </p>
+                </div>
+            </div>
+            <h1
+                class="text-2xl font-bold font-redhat max-w-sm text-center mx-auto mt-10 md:leading-56 md:mt-28 md:text-44 ">
+                Act Fast — Limited Time Offer:
+            </h1>
+            <p class="mt-2.5 text-base font-medium text-center max-w-360 mx-auto md:max-w-[560px] md:text-2xl">
+                Act now and secure your own can of Lights Out at an even cheaper and way better price!
+            </p>
+            <div class="flex bg-gray-250 justify-center rounded-full max-w-md  mx-auto p-2 shadow my-2.5 md:my-7">
+                <button id="oneTimePurchase"
+                    class="p-3.5 font-redhat text-base font-medium rounded-full text-black/45 md:text-lg md:py-4 md:px-5">
+                    One Time Purchase
+                </button>
+                <button id="subscribeSave"
+                    class="font-redhat p-3.5 text-base font-bold rounded-full bg-brown-150 text-black md:text-lg md:py-4 md:px-5">
+                    Subscribe & Save 17%
+                </button>
+            </div>
+            <div class="flex gap-5 justify-center">
+                <h4 class="font-semibold font-redhat text-10 text-black/45 md:text-21">
+                    <i class="fa-solid fa-circle-check mr-1"></i>
+                    Delivered Monthly
+                </h4>
+
+                <h4 class="font-semibold font-redhat text-10 text-black/45 md:text-21">
+                    <i class="fa-solid fa-circle-check mr-1"></i>
+                    Pause or Cancel Anytime
+                </h4>
+
+                <h4 class="font-semibold font-redhat text-10 text-black/45 md:text-21">
+                    <i class="fa-solid fa-circle-check mr-1"></i>
+                    Discounted Pricing
+                </h4>
+            </div>
+            <div class="flex flex-col items-center justify-center gap-6 mt-5 md:mt-7 lg:items-start lg:flex-row">
+                <div
+                    class="h-full border-[1.5px] border-[#e9e9e9] rounded-2xl md:w-[348px] hover:border-brown-150 hover:bg-brown-50">
+                    <h2 class="text-40 text-brown-950 font-milky text-center mt-5">1 Bottle</h2>
+                    <p class="text-3xl font-redhat text-center font-semibold">30 Day Supply</p>
+                    <div>
+                        <img src="/assets/one-jar.png" class="mx-auto mt-5" alt="one-jar">
+                    </div>
+                    <div class="flex justify-center mt-9">
+                        <h5 class="line-through text-[#B3B3B3] text-3xl font-medium my-auto mr-2 font-redhat">$69</h5>
+                        <h4 class="text-brown-950 text-5xl font-bold font-redhat">$48</h4>
+                        <h6 class="items-start text-21 font-medium font-redhat">/bottle</h6>
+                    </div>
+                    <div class="flex justify-center mt-6">
+                        <button
+                            class="text-2xl font-bold font-redhat h-72 w-[297px] text-brown-950 bg-brown-150 rounded-10 hover:bg-white hover:border hover:border-bg-brown-150 mx-5 md:mx-0">
+                            Buy Now - 15% Off
+                        </button>
+                    </div>
+                    <img src="/assets/payment-methods.png" alt="payment-methods" class="mx-auto mt-2.5 mb-4">
+                    <p class="text-xs text-[#9A8D83] text-center mb-4 font-redhat">30 Day Satisfaction Guarantee With
+                        Free
+                        Returns</p>
+                </div>
+                <div
+                    class="h-full border-[1.5px] border-[#e9e9e9] rounded-2xl md:w-[348px] hover:border-brown-150  hover:bg-brown-50 ">
+                    <h2 class="text-40 text-brown-950 font-milky text-center mt-5">3 Bottle</h2>
+                    <p class="text-3xl font-redhat text-center">90 Day Supply</p>
+                    <div>
+                        <img src="/assets/three-jars.png" class="mx-auto mt-7" alt="three-jars">
+                    </div>
+                    <div class="flex justify-center mt-8">
+                        <h5 class="line-through text-[#B3B3B3] text-3xl font-medium my-auto mr-2 font-redhat">$69</h5>
+                        <h4 class="text-brown-950 text-5xl font-bold font-redhat">$42</h4>
+                        <h6 class="items-start text-21 font-medium font-redhat">/bottle</h6>
+                    </div>
+                    <div class="flex justify-center mt-4 pt-0.5">
+                        <button
+                            class="bg-brown-150 text-brown-950 h-9 px-4 font-bold font-redhat rounded-full hover:bg-white hover:border hover:border-brown-950 mx-5 text-10 md:text-base md:mx-0">
+                            FREE EBOOK - Sleep Log
+                        </button>
+                    </div>
+                    <div class="flex justify-center mt-3">
+                        <button
+                            class="text-2xl font-bold font-redhat h-72 w-[297px] text-brown-950 bg-brown-150 rounded-10 hover:bg-white hover:border hover:border-bg-brown-150 mx-5 md:mx-0">
+                            Buy Now - 28% Off
+                        </button>
+                    </div>
+                    <img src="/assets/payment-methods.png" alt="payment-methods" class="mx-auto mt-2.5 mb-4">
+                    <p class="text-xs text-[#9A8D83] text-center mb-4">30 Day Satisfaction Guarantee With Free Returns
+                    </p>
+                </div>
+                <div
+                    class="h-full border-[1.5px] border-[#e9e9e9] rounded-2xl md:w-[348px] hover:border-brown-150 hover:bg-brown-50">
+                    <h2 class="text-40 text-brown-950 font-milky text-center mt-5">3 Bottle</h2>
+                    <p class="text-3xl font-redhat text-center">90 Day Supply</p>
+                    <div>
+                        <img src="/assets/six-jars.png" class="mx-auto mt-7" alt="six-jars">
+                    </div>
+                    <div class="flex justify-center mt-5">
+                        <h5 class="line-through text-[#B3B3B3] text-3xl font-medium my-auto mr-2 font-redhat">$69</h5>
+                        <h4 class="text-brown-950 text-5xl font-bold font-redhat">$34</h4>
+                        <h6 class="items-start text-21 font-medium font-redhat">/bottle</h6>
+                    </div>
+                    <div class="flex justify-center gap-1 mt-8 pt-0.5  mx-5 md:mx-0 ">
+                        <button
+                            class="bg-brown-950 text-10 text-brown-150 h-9 px-4 font-bold font-redhat rounded-full hover:bg-white hover:border hover:border-brown-150 md:text-base">
+                            FREE SHIPPING
+                        </button>
+                        <button
+                            class="bg-brown-150 text-10 text-brown-950 h-9 px-4 font-bold font-redhat rounded-full hover:bg-white hover:border hover:border-brown-950 md:text-base">
+                            FREE EBOOK
+                        </button>
+                    </div>
+                    <div class="flex justify-center mt-3 ">
+                        <button
+                            class="text-2xl font-bold font-redhat h-72 text-brown-950 w-[297px] bg-brown-150 rounded-10 hover:bg-white hover:border hover:border-bg-brown-150  mx-5 md:mx-0">
+                            Buy Now - 44% Off
+                        </button>
+                    </div>
+                    <img src="/assets/payment-methods.png" alt="payment-methods" class="mx-auto mt-2.5">
+                    <p class="text-xs text-[#9A8D83] text-center mt-5 pt-0.5 mb-4">30 Day Satisfaction Guarantee With
+                        Free
+                        Returns</p>
+                </div>
+            </div>
+            <div
+                class="bg-brown-150 relative px-5 mt-12 pb-9 rounded-lg mx-auto md:rounded-20 md:mt-32 md:pb-12 xl:w-864">
+                <div class="flex justify-center">
+                    <img src="/assets/guarantee.png" alt="guarantee" class="absolute -top-5 h-106 md:h-40 md:-top-20" />
+                </div>
+                <h3
+                    class="font-redhat font-bold text-center text-brown-950 pt-2 mt-20 text-34 max-w-52 mx-auto md:leading-10 md:max-w-2xl md:text-4xl md:px-10">
+                    100% SATISFACTION 30 DAY BETTER SLEEP GUARANTEE
+                </h3>
+                <p
+                    class="font-redhat font-medium text-center mx-auto text-lg px-2 max-w-[340px] md:px-4 md:mt-3.5 md:text-22 md:max-w-xl">
+                    Lights Out is backed by a
+                    <strong>‘risk free’ 100% satisfaction guarantee:</strong>
+                    If, after
+                    <strong>30 days,</strong>
+                    you haven’t
+                    noticed improved sleep quality results, or don't get the benefits and results promised,
+                    <strong>you'll get every cent of your money back.</strong>
                 </p>
             </div>
         </div>
-        <h1 class="text-44 font-bold font-redhat max-w-sm text-center mx-auto mt-28">
-            Act Fast — Limited Time Offer:
-        </h1>
-        <p class="mt-2.5 text-2xl font-medium text-center max-w-[560px] mx-auto">
-            Act now and secure your own can of Lights Out at an even cheaper and way better price!
-        </p>
-        <div class="flex bg-gray-250 justify-center rounded-full max-w-md  mx-auto p-2 shadow my-7">
-            <button id="oneTimePurchase" class="py-4 px-5 text-lg font-medium rounded-full text-black/45">
-                One Time Purchase
-            </button>
-            <button id="subscribeSave" class="py-4 px-5 text-lg font-bold rounded-full bg-brown-150 text-black">
-                Subscribe & Save 17%
-            </button>
-        </div>
-        <div class="flex gap-5 justify-center">
-            <h4 class="font-semibold text-21 text-black/45  ">
-                <i class="fa-solid fa-circle-check"></i>
-                Delivered Monthly
-            </h4>
-
-            <h4 class="font-semibold text-21 text-black/45  ">
-                <i class="fa-solid fa-circle-check"></i>
-                Pause or Cancel Anytime
-            </h4>
-
-            <h4 class="font-semibold text-21 text-black/45  ">
-                <i class="fa-solid fa-circle-check"></i>
-                Discounted Pricing
-            </h4>
-        </div>
-        <div class="md:flex justify-center gap-6 mt-7">
-            <div class="md:w-[348px] hover:bg-brown-50 md:h-[546px] border-[1.5px] border-[#e9e9e9] rounded-2xl">
-                <h2 class="text-40 text-brown-950 font-milky text-center mt-5">1 Bottle</h2>
-                <p class="text-3xl font-redhat text-center">30 Day Supply</p>
-                <div>
-                    <img src="/assets/one-jar.png" class="mx-auto" alt="one-jar">
-                </div>
-                <div class="flex justify-center mt-9">
-                    <h5 class="line-through text-[#B3B3B3] text-3xl font-medium my-auto mr-2 font-redhat">$69</h5>
-                    <h4 class="text-brown-950 text-5xl font-bold font-redhat">$48</h4>
-                    <h6 class="items-start text-21 font-medium font-redhat">/bottle</h6>
-                </div>
-                <div class="flex justify-center mt-6">
-                    <button
-                        class="text-2xl font-bold font-redhat h-16 w-[297px] bg-brown-150 rounded-10 hover:bg-white hover:border hover:border-bg-brown-150 ">
-                        Buy Now - 15% Off
-                    </button>
-                </div>
-                <img src="/assets/payment-methods.png" alt="payment-methods" class="mx-auto mt-2.5 mb-4">
-                <p class="text-xs text-[#9A8D83] text-center mb-4 font-redhat">30 Day Satisfaction Guarantee With Free
-                    Returns</p>
+        <!-- Not Done -->
+        <div>
+            <h1
+                class="font-milky text-center text-3xl max-w-40 mx-auto mt-16 pt-2.5 md:max-w-2xl md:leading-96 md:text-64 md:mt-52">
+                Your Last Sleep Aid
+            </h1>
+            <div class="justify-center mt-14 hidden md:flex">
+                <button
+                    class="h-16 w-80 rounded-xl bg-brown-150 text-21 font-redhat font-bold text-center my-auto hover:bg-white hover:border hover:border-brown-950">
+                    Add to Cart
+                    <i class="fa-solid fa-arrow-right-long"></i>
+                </button>
             </div>
-            <div class="md:w-[348px] hover:bg-brown-50 md:h-[615px] border-[1.5px] border-[#e9e9e9] rounded-2xl">
-                <h2 class="text-40 text-brown-950 font-milky text-center mt-5">3 Bottle</h2>
-                <p class="text-3xl font-redhat text-center">90 Day Supply</p>
-                <div>
-                    <img src="/assets/three-jars.png" class="mx-auto mt-2" alt="three-jars">
+            <p class="text-center mt-5 font-bold font-redhat hidden md:block">
+                <i class="fa-solid fa-circle-check text-brown-150"></i>
+                Risk Free Guarantee
+            </p>
+        </div>
+        <!-- Done -->
+        <div class="standard-container">
+            <h1
+                class="font-milky text-center mx-auto text-3xl max-w-xs mt-20 md:mt-72 md:text-64 md:max-w-2xl md:leading-96">
+                Frequently Asked Questions
+            </h1>
+            <div id="accordion">
+                <div
+                    class="accordion-item mx-auto border border-[#e9e9e9] rounded-xl mt-6 md:border-2 md:mt-12 md:max-w-840">
+                    <div class="flex items-center justify-center cursor-pointer h-14 md:h-20">
+                        <h5 class="font-redhat text-xs font-medium text-center md:text-21">
+                            How does Lights Out work?
+                        </h5>
+                    </div>
                 </div>
-                <div class="flex justify-center mt-7">
-                    <h5 class="line-through text-[#B3B3B3] text-3xl font-medium my-auto mr-2 font-redhat">$69</h5>
-                    <h4 class="text-brown-950 text-5xl font-bold font-redhat">$42</h4>
-                    <h6 class="items-start text-21 font-medium font-redhat">/bottle</h6>
+                <div
+                    class="accordion-item mx-auto border border-[#e9e9e9] rounded-xl md:border-2 my-2.5 md:my-30 md:max-w-840">
+                    <div class="flex items-center justify-center cursor-pointer h-14 md:h-20">
+                        <h5 class="font-redhat text-xs font-medium text-center md:text-21">
+                            Why should I take Light’s Out?
+                        </h5>
+                    </div>
                 </div>
-                <div class="flex justify-center mt-4">
-                    <button
-                        class="bg-brown-150 h-9 px-4 font-bold font-redhat rounded-full hover:bg-white hover:border hover:border-brown-950">
-                        FREE EBOOK - Sleep Log
-                    </button>
+                <div class="accordion-item mx-auto border border-[#e9e9e9] rounded-xl md:border-2 md:max-w-840">
+                    <div class="flex items-center justify-center cursor-pointer h-14 md:h-20">
+                        <h5 class="font-redhat text-xs font-medium text-center md:text-21">
+                            What if I don’t have trouble sleeping?
+                        </h5>
+                    </div>
                 </div>
-                <div class="flex justify-center mt-3">
-                    <button
-                        class="text-2xl font-bold font-redhat h-16 w-[297px] bg-brown-150 rounded-10 hover:bg-white hover:border hover:border-bg-brown-150 ">
-                        Buy Now - 28% Off
-                    </button>
+                <div
+                    class="accordion-item mx-auto border border-[#e9e9e9] rounded-xl md:border-2 my-2.5 md:my-30 md:max-w-840">
+                    <div class="flex items-center justify-center cursor-pointer h-14 md:h-20">
+                        <h5 class="font-redhat text-xs font-medium text-center md:text-21">
+                            How long does it take for me to fall asleep?
+                        </h5>
+                    </div>
                 </div>
-                <img src="/assets/payment-methods.png" alt="payment-methods" class="mx-auto mt-2.5 mb-4">
-                <p class="text-xs text-[#9A8D83] text-center mb-4">30 Day Satisfaction Guarantee With Free Returns</p>
-            </div>
-            <div class="md:w-[348px] hover:bg-brown-50 md:h-[656px] border-[1.5px] border-[#e9e9e9] rounded-2xl">
-                <h2 class="text-40 text-brown-950 font-milky text-center mt-5">3 Bottle</h2>
-                <p class="text-3xl font-redhat text-center">90 Day Supply</p>
-                <div>
-                    <img src="/assets/six-jars.png" class="mx-auto mt-2" alt="six-jars">
+                <div class="accordion-item mx-auto border border-[#e9e9e9] rounded-xl md:border-2 md:max-w-840">
+                    <div class="flex items-center justify-center cursor-pointer h-14 md:h-20">
+                        <h5 class="font-redhat text-xs font-medium text-center md:text-21">
+                            Is it safe to consume? </h5>
+                    </div>
                 </div>
-                <div class="flex justify-center mt-2">
-                    <h5 class="line-through text-[#B3B3B3] text-3xl font-medium my-auto mr-2 font-redhat">$69</h5>
-                    <h4 class="text-brown-950 text-5xl font-bold font-redhat">$34</h4>
-                    <h6 class="items-start text-21 font-medium font-redhat">/bottle</h6>
-                </div>
-                <div class="flex justify-center gap-1 mt-8">
-                    <button
-                        class="bg-brown-950 text-brown-150 h-9 px-4 font-bold font-redhat rounded-full hover:bg-white hover:border hover:border-brown-150">
-                        FREE SHIPPING
-                    </button>
-                    <button
-                        class="bg-brown-150 text-brown-950 h-9 px-4 font-bold font-redhat rounded-full hover:bg-white hover:border hover:border-brown-950">
-                        FREE EBOOK
-                    </button>
-                </div>
-                <div class="flex justify-center mt-3">
-                    <button
-                        class="text-2xl font-bold font-redhat h-16 w-[297px] bg-brown-150 rounded-10 hover:bg-white hover:border hover:border-bg-brown-150 ">
-                        Buy Now - 44% Off
-                    </button>
-                </div>
-                <img src="/assets/payment-methods.png" alt="payment-methods" class="mx-auto mt-2.5">
-                <p class="text-xs text-[#9A8D83] text-center mt-5 mb-4">30 Day Satisfaction Guarantee With Free Returns</p>
             </div>
         </div>
     </section>
 
+    <footer class="bg-brown-150 mt-12 md:mt-52">
+        <div class="standard-container lg:flex justify-between pt-9 pb-6 md:pt-14 md:pb-10">
+            <div>
+                <img src="/assets/logo-brown.png" alt="logo" class="cursor-pointer">
+                <h2 class="font-milky text-30  text-brown-950 mt-4 md:mt-6 md:text-40">
+                    Set an Alarm with Us!
+                </h2>
+                <p class="font-redhat text-sm max-w-xs md:max-w-400 md:text-base">
+                    Never stay up unless it’s for our latest releases, sales and more!
+                </p>
+                <div
+                    class="bg-white inline-flex justify-between rounded-xl w-full p-2 mt-4 md:mt-5 md:py-2.5 md:px-4 md:max-w-sm">
+                    <input type="text" id="emailInput" placeholder="Your Email"
+                        class="outline-none bg-white text-base md:text-21">
+                    <button id="submitButton" class="bg-brown-150 rounded-lg h-11 w-11">
+                        <i class="fa-solid fa-chevron-right text-brown-950"></i>
+                    </button>
+                </div>
+                <p id="errorText" class="text-red font-redhat mt-2 hidden text-sm md:text-base"></p>
+                <div class="flex gap-4 mt-4 md:mt-6">
+                    <div class="flex items-center justify-center h-30 w-30 bg-brown-950 rounded-full">
+                        <i class="fa-brands fa-tiktok text-21 text-brown-150 cursor-pointer"></i>
+                    </div>
+                    <div class="flex items-center justify-center h-30 w-30 bg-brown-950 rounded-full">
+                        <i class="fa-brands fa-instagram text-21 text-brown-150 cursor-pointer"></i>
+                    </div>
+                    <div class="flex items-center justify-center h-30 w-30 bg-brown-950 rounded-full">
+                        <i class="fa-brands fa-twitter text-21 text-brown-150 cursor-pointer"></i>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <p class="font-redhat text-xs mt-5 text-brown-950/50">
+                        2023 Shine Labs, Inc.
+                    </p>
+                    <h6 class="font-redhat text-xs font-medium mt-3">
+                        Shine Labs LLC
+                        <br>
+                        9169 W State St #942 Garden City, ID 83714
+                    </h6>
+                    <img src="/assets/payment-methods.png" class="mt-3" alt="payment-methods">
+                </div>
+            </div>
+            <div class="flex flex-col mt-8 md:gap-y-36 lg:mt-0">
+                <div class="flex flex-col justify-between gap-y-6 md:gap-x-28 md:flex-row">
+                    <div class="flex flex-col gap-y-1.5 md:gap-y-4">
+                        <h5 class="font-milky text-brown-950 text-20 md:text-2xl">
+                            Products
+                        </h5>
+                        <a href="#" class="font-medium font-redhat text-brown-950/75 md:text-lg">Lights Out</a>
+                        <a href="#" class="font-medium font-redhat text-brown-950/75 md:text-lg">Soon</a>
+                    </div>
+                    <div class="flex flex-col gap-y-1.5 md:gap-y-4">
+                        <h5 class="font-milky text-brown-950 text-21 md:text-2xl">
+                            About Us
+                        </h5>
+                        <a href="#" class="font-medium font-redhat text-brown-950/75 md:text-lg">Our Story</a>
+                        <a href="#" class="font-medium font-redhat text-brown-950/75 md:text-lg">Our Team</a>
+                    </div>
+                    <div class="flex flex-col gap-y-1.5 md:gap-y-4">
+                        <h5 class="font-milky text-brown-950 text-21 md:text-2xl">
+                            Support
+                        </h5>
+                        <a href="#" class="font-medium font-redhat text-brown-950/75 md:text-lg">Faq</a>
+                        <a href="#" class="font-medium font-redhat text-brown-950/75 md:text-lg">Shipping</a>
+                        <a href="#" class="font-medium font-redhat text-brown-950/75 md:text-lg">Returns</a>
+                        <a href="#" class="font-medium font-redhat text-brown-950/75 md:text-lg">Contact Us</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="lg:hidden">
+                        <h6 class="font-redhat text-base text-center font-medium mt-5 max-w-40 mx-auto">
+                            Shine Labs LLC
+                            <br>
+                            9169 W State St #942 Garden City, ID 83714
+                        </h6>
+                        <p class="font-redhat text-center text-8 mt-2.5 text-brown-950/50">
+                            2023 Shine Labs, Inc.
+                        </p>
+                        <img src="/assets/payment-methods.png" class="mt-2 mx-auto" alt="payment-methods">
+                    </div>
+                    <h5
+                        class="text-white text-center mx-auto font-redhat text-xs mt-2 md:text-base md:max-w-xl lg:mx-0 lg:text-left lg:mt-0">
+                        *These statements have not been evaluated by the FDA. These products are not intended to
+                        diagnose, cure, prevent, or treat any disease. </h5>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script>
     const oneTimePurchaseButton = document.getElementById('oneTimePurchase');
     const subscribeSaveButton = document.getElementById('subscribeSave');
+
 
     oneTimePurchaseButton.addEventListener('click', function () {
         this.classList.remove('bg-white', 'text-black/45', 'font-medium');
@@ -1012,23 +1302,66 @@
         oneTimePurchaseButton.classList.add('#f6f6f6', 'text-black/45', 'font-medium');
     });
 
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+        item.addEventListener('click', () => {
+            accordionItems.forEach(i => i.classList.remove('bg-brown-150', 'border-none', 'text-brown-950'));
+            item.classList.add('bg-brown-150', 'border-none', 'text-brown-950');
+        });
+    });
+
+
+    document.getElementById('submitButton').addEventListener('click', function () {
+        const emailInput = document.getElementById('emailInput');
+        const errorText = document.getElementById('errorText');
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (emailInput.value.trim() === '') {
+            errorText.textContent = 'Please enter your email.';
+            errorText.classList.remove('hidden');
+        } else if (!emailPattern.test(emailInput.value.trim())) {
+            errorText.textContent = 'Please enter a valid email address.';
+            errorText.classList.remove('hidden');
+        } else {
+            emailInput.value = '';
+            errorText.classList.add('hidden');
+        }
+    });
+
     var swiper = new Swiper('.swiper-container', {
         slidesPerView: 1,
         spaceBetween: 30,
         loop: true,
+
+        navigation: {
+            nextEl: '.next-slide',
+            prevEl: '.prev-slide',
+        },
+        pagination: {
+            el: '.pagination',
+            clickable: true,
+            type: 'bullets',
+        },
+
         breakpoints: {
-            // When window width is >= 640px
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 10,
+            },
             640: {
-                slidesPerView: 2,
+                slidesPerView: 1.5,
                 spaceBetween: 20,
             },
-            // When window width is >= 768px
             768: {
                 slidesPerView: 2,
-                spaceBetween: 40,
+                spaceBetween: 25,
             },
-            // When window width is >= 1024px
             1024: {
+                slidesPerView: 3,
+                spaceBetween: 30,
+            },
+            1240: {
                 slidesPerView: 4,
                 spaceBetween: 35,
             },
@@ -1040,35 +1373,29 @@
         spaceBetween: 40,
         loop: true,
         breakpoints: {
-            // when window width is >= 320px
             320: {
                 slidesPerView: 2.5,
                 spaceBetween: 10,
             },
-            // when window width is >= 480px
             480: {
                 slidesPerView: 2,
                 spaceBetween: 20,
             },
-            // when window width is >= 768px
             768: {
                 slidesPerView: 3,
                 spaceBetween: 30,
             },
-            // when window width is >= 1024px
             1024: {
                 slidesPerView: 4,
                 spaceBetween: 40,
             },
-            // when window width is >= 1280px
             1280: {
-                slidesPerView: 5,
+                slidesPerView: 4,
                 spaceBetween: 40,
             }
         }
     });
 
 </script>
-
 
 </html>
