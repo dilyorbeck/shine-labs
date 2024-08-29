@@ -242,35 +242,41 @@
                     </h6>
                 </div>
             </div>
-            <h1 class="text-brown-950 text-64 text-center hidden md:block font-milky md:mb-8">Reviews from Real People</h1>
-            <h2 class="text-brown-950 text-4xl text-center px-10 font-milky md:hidden">Real Reviews from Real People</h2>
+            <h1 class="text-brown-950 text-64 text-center hidden md:block font-milky md:mb-8">Reviews from Real People
+            </h1>
+            <h2 class="text-brown-950 text-4xl text-center px-10 font-milky md:hidden">Real Reviews from Real People
+            </h2>
         </div>
         <div class="swiper-container pb-10">
             <div class="swiper-wrapper mt-4 md:mt-0">
                 <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
-                    <div>
-                        <img src="/assets/swiper.svg" class="mx-auto" alt="swiper-first-photo">
-                    </div>
-                    <div class="flex justify-between items-center mt-2.5">
+                    <div class="">
                         <div>
-                            <h6 class="font-medium">Justin Pham</h6>
-                            <span class="flex gap-1">
-                                <img src="/assets/green-verification.png" alt="green-verification">
-                                <div class="text-xs font-bold text-lime">VERIFIED CUSTOMER</div>
-                            </span>
+                            <img src="/assets/swiper.svg" class="mx-auto" alt="swiper-first-photo">
                         </div>
-                        <div class="flex gap-0.5 text-xs">
-                            <i class="fa-solid fa-star text-brown-150"></i>
-                            <i class="fa-solid fa-star text-brown-150"></i>
-                            <i class="fa-solid fa-star text-brown-150"></i>
-                            <i class="fa-solid fa-star text-brown-150"></i>
-                            <i class="fa-solid fa-star text-brown-150"></i>
+                        <div class="flex justify-between items-center mt-2.5">
+                            <div>
+                                <h6 class="font-medium">Justin Pham</h6>
+                                <span class="flex gap-1">
+                                    <img src="/assets/green-verification.png" alt="green-verification">
+                                    <div class="text-xs font-bold text-lime">VERIFIED CUSTOMER</div>
+                                </span>
+                            </div>
+                            <div class="flex gap-0.5 text-xs">
+                                <i class="fa-solid fa-star text-brown-150"></i>
+                                <i class="fa-solid fa-star text-brown-150"></i>
+                                <i class="fa-solid fa-star text-brown-150"></i>
+                                <i class="fa-solid fa-star text-brown-150"></i>
+                                <i class="fa-solid fa-star text-brown-150"></i>
+                            </div>
                         </div>
+                        <h4 class="text-lg font-bold mt-2">“Fell Asleep Super Fast”</h4>
+                        <p class="text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac
+                            posuere
+                            orci. Proin congue ipsum ac rhoncus semper. Pellentesque Quisque ac posuere orci. Proin
+                            congue
+                            ipsum ac rhoncus semper.</p>
                     </div>
-                    <h4 class="text-lg font-bold mt-2">“Fell Asleep Super Fast”</h4>
-                    <p class="text-sm mt-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque ac posuere
-                        orci. Proin congue ipsum ac rhoncus semper. Pellentesque Quisque ac posuere orci. Proin congue
-                        ipsum ac rhoncus semper.</p>
                 </div>
                 <div class="swiper-slide flex flex-col bg-white pt-6 px-7 pb-10 rounded-22 shadow">
                     <img src="/assets/swiper-2.png" class="mx-auto" alt="swiper-second-photo">
@@ -621,7 +627,7 @@
                                     <h4 class="text-brown-950 text-2xl">Taurine</h4>
                                 </div>
                             </div>
-                            <div class="flex gap-1.5 mt-3.5">
+                            <div class="flex mt-3.5">
                                 <i class="fa-solid fa-circle-check text-brown-950"></i>
                                 <h6 class="text-sm font-medium">
                                     Help you
@@ -1324,36 +1330,10 @@
                 slidesPerView: 4,
                 spaceBetween: 35,
             },
+
         },
     });
 
-    var swiperBenefits = new Swiper('.swiper-container-benefits', {
-        slidesPerView: 5,
-        spaceBetween: 30,
-        loop: true,
-        breakpoints: {
-            320: {
-                slidesPerView: 2.5,
-                spaceBetween: 10,
-            },
-            480: {
-                slidesPerView: 2,
-                spaceBetween: 15,
-            },
-            768: {
-                slidesPerView: 3,
-                spaceBetween: 20,
-            },
-            1024: {
-                slidesPerView: 4,
-                spaceBetween: 30,
-            },
-            1280: {
-                slidesPerView: 5,
-                spaceBetween: 30,
-            }
-        }
-    });
 </script>
 
 </html>
