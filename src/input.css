@@ -14,8 +14,8 @@
     display: none;
 }
 
-*{
-    overflow-x: hidden;
+.swiper-container{
+   @apply overflow-x: hidden;
 }
 
 
